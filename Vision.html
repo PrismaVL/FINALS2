@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission - Japan Drifts</title>
+    <link rel="icon" href="JAPAN.png"/>
+    <style>
+
+        .mission-section, .vision-section {
+            max-width: 1459px;
+            margin: 0 auto;
+            padding: 14px;
+            text-align: left;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        body {
+     font-family: 'Courier New', Courier, monospace;
+     margin: 0;
+     padding: 0;
+ }
+
+ h1 {
+     text-decoration: none;
+     text-shadow: 1px 2px rgb(153, 227, 250);
+ }
+ 
+header {
+     border: 2px solid #333;
+     background-color: #000;
+     padding: 10px 0;
+     text-align: center;
+     margin-bottom: -1px;
+ }
+ 
+ .container {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding: 0 20px;
+ }
+ 
+ .logo {
+     width: 50px;
+     height: auto;
+     margin-right: 10px;
+ }
+ 
+ header h1 {
+     margin: 0;
+     color: #fff;
+     flex: 1;
+     text-align: left;
+ }
+ 
+ nav {
+     flex: 2;
+     display: flex;
+     justify-content: center;
+     z-index: 2;
+ }
+ 
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+ 
+ nav ul li {
+     position: relative;
+     margin: 0 10px;
+ }
+ 
+ nav ul li a {
+     color: #fff;
+     text-decoration: none;
+     display: block;
+     padding: 10px;
+ }
+ 
+ nav ul li:hover {
+     background-color: #555;
+ }
+ 
+ nav ul ul {
+     position: absolute;
+     left: -5px;
+     top: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     padding: 5px;
+     margin: 0;
+     list-style-type: none;
+     width: 560px;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity 0.3s ease, visibility 0.3s ease; 
+ }
+ 
+ nav ul li:hover > ul {
+     opacity: 1; 
+     visibility: visible; 
+ }
+ 
+ nav ul ul li {
+     margin: 0; 
+     background-color: rgba(27, 27, 27, 0.7); 
+ }
+ 
+ nav ul ul li a {
+     display: block;
+     padding: 10px;
+     color: #fff;
+     transition: background-color 0.3s ease;
+ }
+ 
+ nav ul ul li:hover {
+     background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ nav ul ul li a:hover {
+     background-color: rgba(255, 255, 255, 0.2); 
+ }
+ 
+ .submenu.active {
+     display: block;
+     opacity: 1;
+     visibility: visible;
+     background-color: #ffffff;
+ }
+ 
+  main {
+     background-color: #000;
+     color: white;
+     padding: 20px;
+ }
+ footer {
+     height: 100%;
+     background-color: #000;
+     color: white;
+     text-align: center;
+     position: relative;
+     padding: 20px 0;
+     border: 1px solid rgb(173, 173, 173);
+     position: relative;
+     left: 0px;
+     border-left: 0px;
+     border-right: 0px;
+     border-bottom: 0px;
+ }
+ 
+ .footer-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+ 
+ .footer-column {
+     flex: 1;
+     margin: 20px 10px;
+     min-width: 200px;
+     text-align: left;
+ }
+ 
+ .footer-column h3 {
+     color: white;
+     text-shadow: 1px 2px red;
+     margin-bottom: 10px;
+ }
+ 
+ .footer-column ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ 
+ .footer-column ul li {
+     margin: 5px 0;
+ }
+ 
+ .footer-column ul li a {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .footer-logo {
+     flex: 1;
+     margin: 20px;
+     text-align: center;
+ }
+ 
+ .footer-logo img {
+     height: 150px;
+     width: auto;
+ }
+ 
+ .footer-info {
+     width: 100%;
+     text-align: center;
+     border-top: 1px solid #333;
+ }
+ 
+ @media (max-width: 768px) {
+     .footer-container {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .footer-column, .footer-logo {
+         width: 100%;
+         text-align: center;
+         margin: 10px 0;
+     }
+ }
+ 
+.sidebar {
+     position: fixed;
+     right: -270px;
+     top: 0;
+     width: 230px;
+     height: 100%;
+     background-color: rgba(51, 51, 51, 0.8); 
+     color: #fff;
+     transition: right 0.3s ease;
+     padding: 20px;
+     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+     overflow-y: auto;
+     line-height: 25px;
+     z-index: 2;
+ }
+ 
+ .sidebar.active {
+     right: 0; 
+ }
+ 
+ .sidebar h2 {
+     margin-top: 0;
+ }
+ 
+ .sidebar ul {
+     list-style-type: none;
+     padding: 0;
+     line-height: 50px;
+ }
+ 
+ .sidebar ul li {
+     margin: 10px 0;
+     padding: 10px 0;
+     border-bottom: 1px solid #fff;
+     cursor: pointer;
+ }
+ 
+ .sidebar ul li a {
+     color: #fff;
+     text-decoration: none;
+     display: block; 
+ }
+ 
+ .sidebar ul li:hover .sidebar-link {
+     background-color: #555; 
+ }
+ 
+ .sidebar-link {
+     padding: 10px;
+ }
+ 
+ 
+ .close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     font-size: 18px;
+     color: #fff;
+ }
+
+.faq-section {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+     text-align: left;
+ }
+ 
+ .faq-item {
+     margin-bottom: 20px; 
+     border-bottom: 1px solid #333; 
+     padding-bottom: 20px; 
+ }
+ 
+ .faq-item h3 {
+     margin-bottom: 10px;
+     color: #fff;
+ }
+ 
+ .faq-item p {
+     color: #ccc;
+ }
+
+ .about-section {
+     max-width: 1459px;
+     margin: 0 auto;
+     padding: 14px;
+     text-align: left;
+     background-color: #000;
+     color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     margin-top: -20px;
+     margin-bottom: -18px;
+ }
+
+ .mission-section, .vision-section {
+     max-width: 1459px;
+     margin: 0 auto;
+     padding: 14px;
+     text-align: left;
+     background-color: #333;
+     color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     margin-top: 25px;
+     margin-bottom: 25px;
+ }
+
+
+    </style>
+</head>
+<body>
+    <header>  
+        <div class="container">  
+            <a href="home.html">    
+                <img src="JAPAN.png" class="logo">  
+            </a>  
+            <h1>JAPAN DRIFTS</h1>  
+            <nav>  
+                <div class="navbar">  
+                    <ul>  
+                         <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Car Brands</a>  
+                            <ul class="submenu">  
+                                <li><a href="Toyota.html">Toyota</a></li> 
+                                <li><a href="Mazda.html">Mazda</a></li>
+                                <li><a href="Honda.html">Honda</a></li>  
+                                <li><a href="Mitsubishi.html">Mitsubishi</a></li>  
+                                <li><a href="Lexus.html">Lexus</a></li>  
+                                <li><a href="Subaru.html">Subaru</a></li>  
+                                <li><a href="Nissan.html">Nissan</a></li> 
+                            </ul>  
+                        </li>  
+                        <li><a href="Essential.html">Essentials</a></li>  
+                        <li><a href="Streetwear.html">Streetwears</a></li>    
+                        <li><a href="#" onclick="toggleSidebar('sidebar-more')">More</a></li> 
+                    </ul>  
+                </div>  
+            </nav>
+        </div>  
+    </header>  
+
+    <main>
+        <section class="vision-section">
+            <h2>Our Vision</h2>
+            
+            <p>At Japan Drifts, our vision is to be the global epicenter for Japanese automotive culture, connecting enthusiasts worldwide and celebrating the legacy of Japanese car craftsmanship.</p>
+            
+            <p>We envision a community where passion for Japanese cars transcends borders, where enthusiasts can explore, buy, and sell their dream vehicles with confidence and authenticity.</p>
+            
+            <p>Through continuous innovation and a deep commitment to quality, we aim to set new standards in the online automotive marketplace, providing a platform that not only showcases cars but also fosters meaningful connections and experiences.</p>
+            
+            <p>Our vision drives us to constantly evolve, introducing new features and initiatives that enhance user experience and expand our community outreach. Join us as we pave the way for the future of Japanese automotive excellence.</p>
+        </section>
+
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            
+            <p>Our mission at Japan Drifts is to curate a diverse selection of Japanese cars, ensuring each listing meets our stringent standards of authenticity, quality, and accuracy.</p>
+            
+            <p>We are dedicated to providing a secure and transparent marketplace where enthusiasts can buy and sell their favorite Japanese cars with confidence and peace of mind.</p>
+            
+            <p>Through our commitment to community engagement, we strive to foster a vibrant online community where enthusiasts can share their passion, knowledge, and experiences.</p>
+            
+            <p>We aim to empower enthusiasts with the tools and resources they need to make informed decisions, whether they are buying their dream car or exploring the latest trends in Japanese automotive culture.</p>
+            
+            <p>Join us in our mission to celebrate the artistry, innovation, and thrill of Japanese cars, making Japan Drifts the ultimate destination for enthusiasts worldwide.</p>
+        </section>
+    </main>
+
+    <aside id="sidebar-more" class="sidebar">
+        <span class="close-button" onclick="toggleSidebar('sidebar-more')">X</span>
+        <h2>More Options</h2>
+        <ul>
+            <li><a href="FAQ.html"><div class="sidebar-link">FAQ</div></a></li> 
+            <li><a href="About.html"><div class="sidebar-link">About Us</div></a></li> 
+            <li><a href="Story.html"><div class="sidebar-link">Our Story</div></a></li>  
+            <li><a href="Vision.html"><div class="sidebar-link">Vision & Mission</div></a></li>     
+        </ul>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:202310398@fit.edu.ph">202310398@fit.edu.ph</a></li>
+                    <li>Phone: <a href="tel:+63 966 703 6969">(+63) 966-703-6969</a></li>
+                    <li>Address: 69 Curve St., Tokyo, Japan</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/Prismalcs/">Facebook</a></li>
+                    <li><a href="https://x.com/Japan_Drifts">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/prsm_lcs/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="JAPAN.png" alt="Logo">
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>By Jaymard Licas</p>
+            <p>© 2024 JAPAN DRIFTS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar(sidebarId) {
+            const sidebar = document.getElementById(sidebarId);
+            const isActive = sidebar.classList.contains('active');
+            
+            document.querySelectorAll('.sidebar').forEach(function(sidebar) {
+                sidebar.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                sidebar.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

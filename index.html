@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Japan Drifts </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="JAPAN.png"/>
+</head>
+<body>
+    <header>  
+        <div class="container">  
+            <a href="index.html">    
+                <img src="JAPAN.png" class="logo">  
+            </a>  
+            <h1>JAPAN DRIFTS</h1>  
+            <nav>  
+                <div class="navbar">  
+                    <ul>  
+                        <li><a href="#">Car Brands</a>  
+                            <ul class="submenu">  
+                                <li><a href="Toyota.html">Toyota</a></li> 
+                                <li><a href="Mazda.html">Mazda</a></li>
+                                <li><a href="Honda.html">Honda</a></li>  
+                                <li><a href="Mitsubishi.html">Mitsubishi</a></li>  
+                                <li><a href="Lexus.html">Lexus</a></li>  
+                                <li><a href="Subaru.html">Subaru</a></li>  
+                                <li><a href="Nissan.html">Nissan</a></li> 
+                            </ul>  
+                        </li>  
+                        <li><a href="Essential.html">Essentials</a></li>  
+                        <li><a href="Streetwear.html">Streetwear</a></li>    
+                        <li><a href="#" onclick="toggleSidebar('sidebar-more')">More</a></li> 
+                    </ul>  
+                </div>  
+                <div>
+                    <ul class="submenu1">  
+                        <li><a href="log.html">Sign In / Sign Up</a></li> 
+                    </ul>  
+                </div>
+            </nav>
+        </div>  
+    </header>  
+      
+    <main>
+        <section class="banner">
+            <div class="video-container">
+                <img src="https://4kwallpapers.com/images/wallpapers/toyota-supra-mk4-2880x1800-14566.jpg" class="video-poster">
+                <iframe id="youtube-video" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="featured-products">  
+            <h2 class="ess">Featured Brands</h2>  
+            <div class="product-list">  
+                <div class="product-item" data-info="Nissan Motor Co., Ltd., Japanese industrial corporation that manufactures automobiles, trucks, and buses under the names Nissan and Datsun. The company also designs and manufactures such products as communications satellites, pleasure boats, and machinery. Headquarters are in Tokyo.">  
+                    <img src="nissan-removebg-preview.png" class="product-logo">  
+                    <p>Nissan</p>  
+                </div>  
+                <div class="product-item" data-info="Toyota is known for its high-quality and dependable vehicles. Toyota cars are reliable, durable, and built to last. From their sturdy engines to their reliable transmissions, Toyota cars offer a high level of quality that can be trusted.">  
+                    <img src="toyota.png" class="product-logo">  
+                    <p>Toyota</p>  
+                </div>  
+                <div class="product-item" data-info="The Honda we know and love is the product of its founder's dedication to innovation. This world-renowned carmaker produces several popular new models, including CR-V, Pilot, and Odyssey. Its reputation for building durable, efficient, and stylish cars has earned people's trust across the globe.">  
+                    <img src="honda-removebg-preview.png" class="product-logo">  
+                    <p>Honda</p>  
+                </div>  
+            </div>  
+        </section>  
+        <section id="FC" class="featured-products">  
+            <h2 class="ess">Featured Cars</h2>  
+            <div class="product-list">  
+                <div class="product-item1" data-info="The Nissan Skyline GT-R R34 is an iconic Japanese sports car known for its performance and styling">  
+                    <img src="Skyline-removebg-preview.png" class="product-logo">  
+                    <p>Nissan Skyline GT-R R34</p>  
+                </div>  
+                <div class="product-item1" data-info="The Toyota Supra MK4 is a legendary sports car celebrated for its turbocharged performance and timeless design">  
+                    <img src="Supra-removebg-preview.png" class="product-logo">  
+                    <p>Toyota Supra MK4</p>  
+                </div>  
+                <div class="product-item1" data-info="The Honda Integra Type R is a high-performance variant of the Honda Integra known for its agile handling and VTEC engine">  
+                    <img src="Integra-removebg-preview.png" class="product-logo">  
+                    <p>Honda Integra Type R</p>  
+                </div>  
+            </div>  
+        </section>  
+    </main> 
+    <aside id="sidebar-more" class="sidebar">
+        <span class="close-button" onclick="toggleSidebar('sidebar-more')">X</span>
+        <h2>More Options</h2>
+        <ul>
+            <li><a href="FAQ.html"><div class="sidebar-link">FAQ</div></a></li> 
+            <li><a href="About.html"><div class="sidebar-link">About Us</div></a></li> 
+            <li><a href="Story.html"><div class="sidebar-link">Our Story</div></a></li>  
+            <li><a href="Vision.html"><div class="sidebar-link">Vision & Mission</div></a></li>     
+        </ul>
+    </aside>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:202310398@fit.edu.ph">202310398@fit.edu.ph</a></li>
+                    <li>Phone: <a href="tel:+63 966 703 6969">(+63) 966-703-6969</a></li>
+                    <li>Address: 69 Curve St., Tokyo, Japan</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/Prismalcs/">Facebook</a></li>
+                    <li><a href="https://x.com/Japan_Drifts">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/prsm_lcs/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="JAPAN.png" alt="Logo">
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>By Jaymard Licas</p>
+            <p>© 2024 JAPAN DRIFTS. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const videoContainer = document.querySelector('.video-container');
+    const videoPoster = document.querySelector('.video-poster');
+    const youtubeVideo = document.getElementById('youtube-video');
+    let timeoutId;
+
+    function playVideo() {
+        videoPoster.classList.add('fade-out');
+        setTimeout(() => {
+            videoPoster.style.display = 'none';
+            youtubeVideo.classList.add('fade-in');
+            youtubeVideo.style.display = 'block';
+            youtubeVideo.src = "https://www.youtube.com/embed/tKqq6SAb_1M?autoplay=1&start=174&controls=0&modestbranding=1&disablekb=1&showinfo=0&rel=0&iv_load_policy=3";
+        }, 1000); 
+    }
+
+    function checkVisibility() {
+        const rect = videoContainer.getBoundingClientRect();
+        const isVisible = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+
+        if (isVisible) {
+            timeoutId = setTimeout(playVideo, 1500);
+        } else {
+            clearTimeout(timeoutId);
+        }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
+    checkVisibility();  
+});
+
+        function toggleSidebar(sidebarId) {
+            const sidebar = document.getElementById(sidebarId);
+            const isActive = sidebar.classList.contains('active');
+            
+            document.querySelectorAll('.sidebar').forEach(function(sidebar) {
+                sidebar.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                sidebar.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
